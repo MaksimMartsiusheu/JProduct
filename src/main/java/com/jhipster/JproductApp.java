@@ -12,6 +12,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.liquibase.LiquibaseProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cloud.stream.annotation.EnableBinding;
+import org.springframework.cloud.stream.messaging.Processor;
+import org.springframework.cloud.stream.schema.client.EnableSchemaRegistryClient;
 import org.springframework.core.env.Environment;
 
 import javax.annotation.PostConstruct;
@@ -21,6 +24,8 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @SpringBootApplication
+@EnableBinding(Processor.class)
+@EnableSchemaRegistryClient
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
 public class JproductApp {
 

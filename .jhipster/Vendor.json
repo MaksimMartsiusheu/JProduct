@@ -1,0 +1,28 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "jproduct",
+  "relationships": [],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": 0,
+      "fieldValidateRulesMaxlength": "32"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "20200709183411",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "vendor",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "infinite-scroll",
+  "microserviceName": "jproduct"
+}

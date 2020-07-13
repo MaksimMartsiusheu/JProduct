@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "name": "EntityEventKey",
+    "namespace": "com.jhipster.domain",
+    "fields": [
+    {
+          "name": "eventType",
+          "type": {
+            "name": "EventType",
+            "type": "enum",
+            "symbols" : ["DELETED", "CREATED", "UPDATED"]
+          }
+    },
+    {
+        "name": "dateTime",
+        "type": "long"
+    }]
+}

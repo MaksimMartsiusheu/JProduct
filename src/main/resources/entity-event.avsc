@@ -1,0 +1,14 @@
+{
+    "type": "record",
+    "name": "EntityEvent",
+    "namespace": "com.jhipster.domain",
+    "fields": [
+    {
+        "name": "entityId",
+        "type": "long"
+    },
+    {
+        "name": "entityName",
+        "type": "string"
+    }]
+}

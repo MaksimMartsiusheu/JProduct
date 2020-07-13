@@ -1,0 +1,41 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "jproduct",
+  "relationships": [
+    {
+      "relationshipName": "vendor",
+      "otherEntityName": "vendor",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "name",
+      "otherEntityRelationshipName": "product"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "price",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": 0
+    },
+    {
+      "fieldName": "categoryId",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min"],
+      "fieldValidateRulesMin": 0
+    }
+  ],
+  "changelogDate": "20200709183253",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceImpl",
+  "entityTableName": "product",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": true,
+  "pagination": "infinite-scroll",
+  "microserviceName": "jproduct"
+}
